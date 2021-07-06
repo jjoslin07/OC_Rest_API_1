@@ -7,7 +7,7 @@ const normalizePort = val => {
     if (isNaN(port)) {
         return val;
     }
-    if (port >= o) {
+    if (port >= 0) {
         return port;
     }
     return false;
@@ -30,8 +30,8 @@ const errorHandler = error => {
             console.error(bind + ' is already in use.');
             process.exit(1);
             break;
-        default;
-        throw error;
+        default:
+            throw error;
     }
 };
 
