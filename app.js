@@ -48,26 +48,34 @@ app.post('/api/stuff', (req, res, next) => {
     );
 });
 
-app.use('/api/stuff', (req, res, next) => {
-    const stuff = [{
-            _id: 'oainfeoifnaoin',
-            title: 'My first thing',
-            description: 'All of the info about my first thing',
-            imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Hasselblad_500_CM.jpg/1024px-Hasselblad_500_CM.jpg',
-            price: 4900,
-            userId: 'oaignoainge',
-        },
-        {
-            _id: 'aigoeaingoieng',
-            title: 'My second thing',
-            description: 'All of the info about my second thing',
-            imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Hasselblad_500_CM.jpg/1024px-Hasselblad_500_CM.jpg',
-            price: 3999,
-            userId: 'oaignoainge',
-        },
+app.get('/api/stuff/:id', (req, res, next) => {
+    Thing.findOne({
+        _id: req.params.id
+    }).then(
+        (thing) => {
+            res.status(200).json(thing);
+        }
+    ).catch(
+        (error) => {
+            res.status(404).json({
+                error: error
+            });
+        }
+    );
+});
 
-    ];
-    res.status(200).json(stuff);
+app.use('/api/stuff', (req, res, next) => {
+    Thing.find().then(
+        (things) => {
+            res.status(200).json(things);
+        }
+    ).catch(
+        (error) => {
+            res.status(400).json({
+                error: error
+            });
+        }
+    );
 });
 
 module.exports = app;
