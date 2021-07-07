@@ -1,6 +1,5 @@
 # Go-Fullstack Project OC
 ### [Go Full-Stack With Node.js, Express, and MongoDB Course (Project 6 Web Developer Course)](https://openclassrooms.com/en/courses/5614116-go-full-stack-with-node-js-express-and-mongodb)
-### Screenshots ➡ [Click Here](#screenshots)
 
 ### Synopsis
 
@@ -35,8 +34,16 @@ In order to succeed in this course, you will need to already have a good underst
 - Node
 - Angular CLI
 
-<div id="screenshots" align="center">
-  </div>
+## What I Learned
+
+✔️ Node Server<br>
+✔️ Express app<br>
+✔️ MongoDB database<br>
+✔️ RESTful API<br>
+✔️ C.R.U.D.<br>
+✔️ Token-based authentication<br>
+✔️ File-handling operations
+  
   
 
   
