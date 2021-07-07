@@ -36,13 +36,6 @@ In order to succeed in this course, you will need to already have a good underst
 - Angular CLI
 
 <div id="screenshots" align="center">
-  <h1>Screenshots</h1>
-  <h2>All Products</h2>
-  <img src="https://user-images.githubusercontent.com/73438491/124807283-762d0780-df12-11eb-95f7-bc625882e6e0.png" />
-  <h2>Single Product Page</h2>
-  <img src="https://user-images.githubusercontent.com/73438491/124807676-e2a80680-df12-11eb-887b-86b7155fe2ad.png" />
-  <h2>Submit a Product</h2>
-  <img src="https://user-images.githubusercontent.com/73438491/124807807-0a976a00-df13-11eb-9c0a-7ae436f31775.png" />
   </div>
   
 
