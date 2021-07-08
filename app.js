@@ -10,7 +10,7 @@ const userRoutes = require('./routes/user');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://Joe:ZCEoqhb8nF13Qg4l@cluster0.fip4x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://Joe:<password>@cluster0.fip4x.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
     .then(() => {
         console.log('Successfully connected to MongoDB Atlas!');
     })
